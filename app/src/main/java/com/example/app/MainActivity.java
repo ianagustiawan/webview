@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
         mWebView.setWebViewClient(new MyWebViewClient());
 
         // REMOTE RESOURCE
-        // mWebView.loadUrl("https://example.com");
+        mWebView.loadUrl("https://mobile.ant.design/kitchen-sink/components/tab-bar?lang=en-US#tab-bar-demo-1");
 
         // LOCAL RESOURCE
         // mWebView.loadUrl("file:///android_asset/index.html");
