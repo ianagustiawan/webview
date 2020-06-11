@@ -18,10 +18,13 @@ public class MainActivity extends Activity {
         mWebView = findViewById(R.id.activity_main_webview);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setDatabaseEnabled(true);
+
         mWebView.setWebViewClient(new MyWebViewClient());
 
         // REMOTE RESOURCE
-        mWebView.loadUrl("https://mobile.ant.design/kitchen-sink/components/tab-bar?lang=en-US#tab-bar-demo-1");
+        mWebView.loadUrl("https://mobile.linikerja.id/");
 
         // LOCAL RESOURCE
         // mWebView.loadUrl("file:///android_asset/index.html");

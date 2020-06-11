@@ -12,7 +12,7 @@ class MyWebViewClient extends WebViewClient {
         String hostname;
 
         // YOUR HOSTNAME
-        hostname = "mobile.ant.design";
+        hostname = "mobile.linikerja.id";
 
         Uri uri = Uri.parse(url);
         if (url.startsWith("file:") || uri.getHost() != null && uri.getHost().endsWith(hostname)) {
@@ -23,3 +23,4 @@ class MyWebViewClient extends WebViewClient {
         return true;
     }
 }
+
